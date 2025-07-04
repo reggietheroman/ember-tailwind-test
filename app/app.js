@@ -3,6 +3,7 @@ import Resolver from 'ember-resolver';
 import loadInitializers from 'ember-load-initializers';
 import config from 'tailwind-test/config/environment';
 import { importSync, isDevelopingApp, macroCondition } from '@embroider/macros';
+import 'tailwind-test/app.css';
 
 if (macroCondition(isDevelopingApp())) {
   importSync('./deprecation-workflow');
